@@ -2,4 +2,4 @@
 Don't miss Ramadan with this simple countdown timer!
 
 ## Website
-here: http://ramadantimer.epizy.com/
+here: https://ramadantimer.epizy.com/
