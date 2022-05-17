@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
 
 * {
-    box-sizing: border-box;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 body {
-    background-image: url(images/bg.webp);
+    background-image: url("https://publicholidays.co.id/wp-content/uploads/2017/06/Indoneisa_Eid_Indo_Output.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
-    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 0;
-    overflow: hidden;
 }
 
 .countdown {
@@ -35,6 +34,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 15px;
+    text-shadow: 1px 1px 7px;
 }
 
 .time h2 {
