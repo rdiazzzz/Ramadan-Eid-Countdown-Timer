@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Ramadan Countdown Timer</title>
 </head>
+
 <body>
+    <!-- <h1>Hitung mundur bulan Ramadan</h1> -->
+    <!-- countdown timer -->
+    <div class="countdown">
+        <div class="time">
+            <h2 id="days"></h2>
+            <small>Hari</small>
+        </div>
 
-<h1>Hitung mundur bulan Ramadan</h1>
+        <div class="time">
+            <h2 id="hours"></h2>
+            <small>Jam</small>
+        </div>
 
-<div id="countdown" class="countdown">
+        <div class="time">
+            <h2 id="minutes"></h2>
+            <small>Menit</small>
+        </div>
 
-<div class="time">
-    <h2 id="days"></h2>
-    <small>Hari</small>
-</div>
+        <div class="time">
+            <h2 id="seconds"></h2>
+            <small>Detik</small>
+        </div>
+    </div>
 
-<div class="time">
-    <h2 id="hours"></h2>
-    <small>Jam</small>
-</div>
+    <!-- preloader -->
+    <div class="loader-wrapper">
+        <span class="loader">
+            <span class="loader-inner"></span>
+        </span>
+    </div>
 
-<div class="time">
-    <h2 id="minutes"></h2>
-    <small>Menit</small>
-</div>
-
-<div class="time">
-    <h2 id="seconds"></h2>
-    <small>Detik</small>
-</div>
-
-</div>
     <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="animation.js"></script>
 </body>
+
 </html>

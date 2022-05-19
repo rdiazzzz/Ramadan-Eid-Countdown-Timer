@@ -35,15 +35,3 @@ const startTimer = () => {
 }
 
 setInterval(startTimer, 1000);
-
-//countdown
-// function updateCountdown() {
-
-
-
-
-
-
-// }
-
-// 
