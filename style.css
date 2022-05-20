@@ -19,16 +19,24 @@ body {
     margin: 0;
 }
 
+.enableBlur>* {
+    filter: blur(1.2px);
+}
+
+.disableBlur {
+    filter: blur(0);
+}
+
 .countdown {
-    box-shadow: rgba(245, 245, 245, 0.632) 0 0 10px 10px;
-    border-radius: 10px;
-    background-color: rgba(245, 245, 245, 0.632);
     display: flex;
     transform: scale(2);
     -webkit-transform: scale(2);
     -moz-transform: scale(2);
     -ms-transform: scale(2);
     -o-transform: scale(2);
+    background-color: rgba(245, 245, 245, 0.632);
+    box-shadow: rgba(245, 245, 245, 0.632) 0 0 10px 10px;
+    border-radius: 10px;
 }
 
 .time {
