@@ -3,6 +3,7 @@ const path = require('path')
 
 function createWindow() {
     const win = new BrowserWindow({
+        icon: 'assets/icon.ico',
         width: 960,
         height: 540,
         minHeight: 480,
