@@ -17,7 +17,6 @@ body {
     justify-content: center;
     text-align: center;
     margin: 0;
-    -webkit-app-region: drag;
 }
 
 .enableBlur>* {
