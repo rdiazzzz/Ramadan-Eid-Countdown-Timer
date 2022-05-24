@@ -3,14 +3,18 @@ const path = require('path')
 
 function createWindow() {
     const win = new BrowserWindow({
-        width: 1280,
-        height: 720,
-        webPreferences: {
-            preload: path.join(__dirname, 'preload.js')
+        width: 960,
+        height: 540,
+        minHeight: 480,
+        minWidth: 480,
+        titleBarStyle: 'hidden',
+        titleBarOverlay: {
+            color: '#00FFFFFF',
         }
     })
 
     win.loadFile('index.html')
+    // win.loadURL('https://zenkaa7.github.io/Ramadan-Countdown-Timer/')
 }
 
 app.whenReady().then(() => {

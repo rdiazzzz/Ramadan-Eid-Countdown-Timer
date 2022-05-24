@@ -1,19 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ramadan Countdown Timer</title>
 </head>
 
 <body>
-    <h1>Hello World!</h1>
-    <p>
-        We are using Node.js <span id="node-version"></span>,
-        Chromium <span id="chrome-version"></span>,
-        and Electron <span id="electron-version"></span>.
-    </p>
+    <!-- <h1>Hitung mundur bulan Ramadan</h1> -->
+
+    <!-- countdown timer -->
+    <div class="countdown">
+        <div class="time">
+            <h2 id="days"></h2>
+            <small>Hari</small>
+        </div>
+
+        <div class="time">
+            <h2 id="hours"></h2>
+            <small>Jam</small>
+        </div>
+
+        <div class="time">
+            <h2 id="minutes"></h2>
+            <small>Menit</small>
+        </div>
+
+        <div class="time">
+            <h2 id="seconds"></h2>
+            <small>Detik</small>
+        </div>
+    </div>
+
+    <!-- preloader -->
+    <div class="loader-wrapper">
+        <span class="loader">
+            <span class="loader-inner"></span>
+        </span>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="animation.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
+
+* {
+    font-family: "Roboto Flex", sans-serif;
+}
+
+body {
+    background-image: url("https://publicholidays.co.id/wp-content/uploads/2017/06/Indoneisa_Eid_Indo_Output.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    -webkit-app-region: drag;
+}
+
+.enableBlur>* {
+    filter: blur(1.2px);
+}
+
+.disableBlur {
+    filter: blur(0);
+}
+
+.countdown {
+    display: flex;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    background-color: rgba(245, 245, 245, 0.632);
+    box-shadow: rgba(245, 245, 245, 0.632) 0 0 10px 10px;
+    border-radius: 10px;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    text-shadow: 1px 1px 7px;
+}
+
+.time h2 {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1;
+    margin: 0 0 5px;
+}
+
+@media(max-width:700px) {
+
+    .time {
+        margin: 5px;
+    }
+
+    .time h2 {
+        font-size: 32px;
+    }
+
+    .time small {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:500px) {
+
+    .time {
+        margin: 5px;
+    }
+
+    .time h2 {
+        font-size: 22px;
+    }
+
+    .time small {
+        font-size: 10px;
+    }
+}
+
+/* preloader */
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+
+    25% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+
+    75% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0%;
+    }
+}
