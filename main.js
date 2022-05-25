@@ -3,7 +3,7 @@ const path = require('path')
 
 function createWindow() {
     const win = new BrowserWindow({
-        icon: 'assets/icon.ico',
+        // icon: 'assets/icon.ico',
         width: 960,
         height: 540,
         minHeight: 480,
@@ -14,7 +14,7 @@ function createWindow() {
         }
     })
 
-    win.loadFile('index.html')
+    win.loadFile('src/index.html')
     // win.loadURL('https://zenkaa7.github.io/Ramadan-Countdown-Timer/')
 }
 

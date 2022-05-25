@@ -20,14 +20,26 @@ body {
     -webkit-app-region: drag;
 }
 
-.enableBlur>* {
-    filter: blur(1.2px);
+/* connection checker */
+.connection {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #eaeaea;
+    opacity: 20%;
+    font-size: 20px;
 }
 
-.disableBlur {
-    filter: blur(0);
+.status {
+    position: absolute;
+    bottom: 0;
+    left: 130px;
+    color: #eaeaea;
+    opacity: 20%;
+    font-size: 20px;
 }
 
+/* countdowntimer */
 .countdown {
     display: flex;
     transform: scale(2);
