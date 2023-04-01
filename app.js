@@ -6,12 +6,12 @@ const seconds = document.getElementById('seconds');
 let interval;
 
 const startTimer = () => {
-    const newRamadhanDate = new Date('March 22, 2023 00:00:00').getTime();
+    const newEidDate = new Date('April 21, 2023 00:00:00').getTime();
 
     interval = setInterval(() => {
 
         const currentTime = new Date();
-        const distance = newRamadhanDate - currentTime;
+        const distance = newEidDate - currentTime;
 
         const d = Math.floor(distance / 1000 / 60 / 60 / 24);
         const h = Math.floor(distance / 1000 / 60 / 60) % 24;
@@ -22,9 +22,9 @@ const startTimer = () => {
             clearInterval(interval)
 
             days.innerHTML = "Happy"
-            hours.innerHTML = "Ra"
-            minutes.innerHTML = "ma"
-            seconds.innerHTML = "dan"
+            hours.innerHTML = "Eid"
+            minutes.innerHTML = "Mu"
+            seconds.innerHTML = "Barak"
         } else {
             days.innerHTML = d;
             hours.innerHTML = h < 10 ? '0' + h : h;
