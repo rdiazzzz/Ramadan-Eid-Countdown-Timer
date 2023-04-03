@@ -2,4 +2,4 @@
 Don't miss Ramadan and Eid with this simple countdown timer!
 
 ## Website
-https://zenkaa7.github.io/Ramadan-Eid-Countdown-Timer/
+https://rdiazzzz.github.io/Ramadan-Eid-Countdown-Timer/
