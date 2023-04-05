@@ -20,6 +20,10 @@ body {
     -webkit-app-region: drag;
 }
 
+/* h1 { */
+/*   font-size: 40; */
+/* } */
+
 /* connection checker */
 .connection {
     position: absolute;
